@@ -5,18 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.6.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
     <title>Sound Tito</title>
 </head>
 
 <body>
     <nav>
-        <ul>
+        <ul class="nav flex">
             <li class="logo">Sound Tito</li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#courses">Cursos</a></li>
-            <li><a href="#depoiments">Depoimentos</a></li>
-            <li><a href="#contacts">Contatos</a></li>
-            <li class="search"><i class="fa-solid fa-magnifying-glass"></i></li>
+            <ul class="topics flex">
+                <li><a href="#">Home</a></li>
+                <li><a href="#courses">Cursos</a></li>
+                <li><a href="#depoiments">Depoimentos</a></li>
+                <li><a href="#contacts">Contatos</a></li>
+            </ul>
+            <li class="search"><i class="fa-solid fa-magnifying-glass fa-2xl"
+                    style="color: whitesmoke; cursor: pointer;"></i></li>
         </ul>
     </nav>
 
@@ -26,84 +30,87 @@
             <p>Somos uma escola dedicada à formação musical de qualidade, com uma equipe de professores altamente
                 qualificados e apaixonados pelo ensino. Com uma infraestrutura moderna e ambiente acolhedor, nossa
                 escola visa proporcionar o melhor aprendizado musical, respeitando o ritmo e as necessidades de cada
-                aluno. Seja você iniciante ou avançado, aqui temos o curso ideal para você. Venha fazer parte dessa
-                jornada musical conosco!</p>
+                aluno. Seja você iniciante ou avançado, aqui temos o curso ideal para você. <strong>Venha fazer parte
+                    dessa
+                    jornada musical conosco!</strong></p>
         </div>
     </main>
 
     <section id="courses">
         <h2 class="title">Cursos</h2>
-        <div class="card-course">
-            <img src="" alt="">
-            <p>Violão: Aprenda a tocar violão em diferentes estilos, desde os primeiros acordes até solos e técnicas
-                avançadas.</p>
-        </div>
-        <div class="card-course">
-            <img src="" alt="">
-            <p>Violino: Aprofunde-se no estudo do violino, com aulas que exploram a técnica, a leitura musical e a
-                interpretação de peças orquestrais.</p>
-        </div>
-        <div class="card-course">
-            <img src="" alt="">
-            <p>Piano: Descubra o prazer de tocar piano, com aulas que abordam desde as noções básicas até a
-                interpretação de peças clássicas e modernas.</p>
-        </div>
-        <div class="card-course">
-            <img src="" alt="">
-            <p>Bateria: Desenvolva sua coordenação e ritmo tocando bateria, com aulas que cobrem os fundamentos e também
-                o estilo livre.</p>
+        <div class="cards flex">
+            <div class="card-course">
+                <img src="https://images.unsplash.com/photo-1510706720909-d705765c9b35?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <p>Violão: Aprenda a tocar violão em diferentes estilos, desde os primeiros acordes até solos e técnicas
+                    avançadas.</p>
+            </div>
+            <div class="card-course">
+                <img src="https://images.unsplash.com/photo-1566913485242-694e995731b4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <p>Violino: Aprofunde-se no estudo do violino, com aulas que exploram a técnica, a leitura musical e a
+                    interpretação de peças orquestrais.</p>
+            </div>
+            <div class="card-course">
+                <img src="https://images.unsplash.com/photo-1552422535-c45813c61732?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <p>Piano: Descubra o prazer de tocar piano, com aulas que abordam desde as noções básicas até a
+                    interpretação de peças clássicas e modernas.</p>
+            </div>
+            <div class="card-course">
+                <img src="https://images.unsplash.com/photo-1676911629389-100e59647bd8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <p>Bateria: Desenvolva sua coordenação e ritmo tocando bateria, com aulas que cobrem os fundamentos e
+                    também
+                    o estilo livre.</p>
+            </div>
         </div>
     </section>
 
     <section id="depoiments">
         <h2 class="title">Depoimentos</h2>
-        <p>O que dizem nossos alunos</p>
-        <div class="card-bg">
-            <ul>
-                <li><i class="fa-solid fa-chevron-left" style="color: #74C0FC;"></i></li>
-                <li class="card-depoiment">
-                    <p>"Sempre sonhei em tocar piano, mas nunca soube por onde começar. A Escola Lapa me deu toda a base
-                        e hoje toco com prazer em diversas apresentações."</p>
-                    <div class="user">
-                        <img src="" alt="" class="profile">
-                        <p class="username">Everson Costa</p>
-                        <p>Aluno de Piano</p>
-                    </div>
-                </li>
-                <li><i class="fa-solid fa-chevron-right" style="color: #74C0FC;"></i></li>
-            </ul>
+        <p class="subtitle">O que dizem nossos alunos</p>
+        <div class="card-depoiment testimonial-container">
+            <div class="progress-bar"></div>
+            <p class="testimonial"><strong>"Sempre sonhei em tocar piano, mas nunca soube por onde começar. A Escola Lapa me deu toda a base
+                    e hoje toco com prazer em diversas apresentações."</strong></p>
+            <div class="user flex">
+                <img src="https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="user" class="user-image">
+                <div class="user-details">
+                    <p class="username"><strong>Everson Costa</strong></p>
+                    <p class="role">Aluno de Piano</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="contacts">
         <h2 class="title">Contatos</h2>
-        <div class="contacts-main">
+        <div class="contacts-main flex">
             <div class="informations-contact">
                 <h3>Tem alguma dúvida ou quer saber mais sobre os cursos? Estamos à disposição para atendê-lo!</h3>
                 <div class="informations">
-                    <div class="phone">
-                        <p class="subtitle">TELEFONE</p>
-                        <p>(11) 91234-5678</p>
-                    </div>
-
-                    <div class="email">
-                        <p class="subtitle">EMAIL</p>
-                        <p>email@email.com</p>
-                    </div>
-
-                    <div class="endereco">
-                        <p class="subtitle">ENDEREÇO</p>
-                        <p>Rua da Alegria, 123</p>
+                    <div class="info-titles flex">
+                        <p><span class="info-title">TELEFONE</span> <br>(11) 91234-5678</p>
+                        <p><span class="info-title">EMAIL</span> <br>email@email.com</p>
+                        <p><span class="info-title">ENDEREÇO</span> <br>Rua da Alegria, 123</p>
                     </div>
                 </div>
-                <h3>Inscreva-se para ofertas exclusivas!</h3>
-                <input type="text" placeholder="Seu endereço de email">
-                <button type="button">Enviar</button>
+                <h3 class="subscribe">Inscreva-se para ofertas exclusivas!</h3>
+                <div class="email flex">
+                    <input type="text" placeholder="Seu endereço de email" class="input-email">
+                    <button type="button" class="send-email-btn">Enviar</button>
+                </div>
             </div>
+            <img src="https://images.unsplash.com/photo-1504904126298-3fde501c9b31?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="" class="contacts-img">
         </div>
     </section>
 
     <footer>Sound Tito - Todos os Direitos Reservados</footer>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>

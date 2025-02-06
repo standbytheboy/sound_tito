@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Gasoek+One&family=Inspiration&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Albert Sans", serif;
+    color: whitesmoke;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #393939;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    max-width: 90%;
+    margin: 2rem auto 0;
+}
+
+.topics {
+    width: 50rem;
+}
+
+.topics li a {
+    font-size: 20px;
+}
+
+.logo {
+    font-family: "Inspiration", Arial, Helvetica, sans-serif;
+    font-size: 4.5rem;
+}
+
+.container {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1619983081563-430f63602796?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    width: 90%;
+    height: 57rem;
+    border-radius: 50px;
+    padding: 35px;
+    margin-top: 1rem;
+    background-position: center;
+}
+
+.title {
+    font-family: "Gasoek One", sans-serif;
+    font-weight: 100;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.container .title {
+    text-align: left;
+    margin-top: 5rem;
+}
+
+p {
+    font-size: 2.4rem;
+    max-width: 60rem;
+    margin: 5rem 0 0;
+}
+
+#courses,
+#depoiments,
+#contacts {
+    margin: 5rem auto;
+    width: 90%;
+}
+
+.cards {
+    margin-top: 4rem;
+}
+
+.card-course {
+    width: 30rem;
+    height: 50rem;
+}
+
+.card-course img {
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.subtitle {
+    margin: 0 auto 4rem;
+    text-align: center;
+}
+
+#depoiments {
+    background-color: black;
+    margin: 10rem auto;
+    padding: 4rem;
+    border-radius: 5rem;
+}
+
+.card-depoiment {
+    display: flex;
+    background-color: #6a6a6a40;
+    max-width: 64rem;
+    border-radius: 2rem;
+    padding: 2.5rem 3rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+.user-image {
+    border-radius: 50%;
+    width: 6.5rem;
+    height: 6.5rem;
+    object-fit: cover;
+}
+
+.user {
+    width: fit-content;
+}
+
+.role,
+.card-depoiment p {
+    margin: 0;
+}
+
+.contacts-img {
+    width: 43.7rem;
+    height: 43.7rem;
+    border-radius: 5rem;
+}
+
+.informations-contact h3 {
+    font-size: 3rem;
+    font-weight: 400;
+    max-width: 68.5rem;
+}
+
+.info-titles {
+    margin: 5rem 0;
+}
+
+.info-title {
+    color: #9E9E9E;
+}
+
+.email,
+.user {
+    width: fit-content;
+    margin: 0;
+    gap: 1rem;
+}
+
+.subscribe {
+    margin-bottom: 2rem;
+}
+
+.input-email {
+    background-color: #9E9E9E40;
+    border: none;
+    border-radius: 1rem;
+    width: 50rem;
+    height: 5rem;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.send-email-btn {
+    background-color: black;
+    height: 5rem;
+    padding: 0 2rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1.5rem 0;
+}
+
+.testimonial {
+    padding-top: 30px;
+}
+
+.testimonial-container {
+    position: relative;
+}
+
+.progress-bar {
+    max-width: 58rem;
+    position: absolute;
+    background-color: #fff;
+    height: 4px;
+    width: 100%;
+    animation: grow 10s linear infinite;
+    transform-origin: left;
+}
+
+@keyframes grow {
+    0% {
+        transform: scaleX(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial-container {
+        padding: 20px 30px;
+    }
+
+    .fa-quote {
+        display: none;
+    }
+}
