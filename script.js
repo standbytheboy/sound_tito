@@ -22,15 +22,15 @@ const testimonials = [
     },
     {
       name: 'Carlos Henrique',
-      position: 'Aluna de Piano',
-      photo: 'https://randomuser.me/api/portraits/women/44.jpg',
+      position: 'Aluno de Piano',
+      photo: 'https://randomuser.me/api/portraits/men/44.jpg',
       text:
         'Sempre sonhei em aprender piano, mas nunca sabia por onde começar. Na Escola de Música Lapa, encontrei o apoio perfeito para me desenvolver musicalmente. As aulas são dinâmicas e os professores sabem como te desafiar no momento certo. O site também tem todas as informações que preciso, e é super simples de entrar em contato com a escola!',
     },
     {
       name: 'Mariana Lima',
       position: 'Aluna de Bateria',
-      photo: 'https://randomuser.me/api/portraits/women/44.jpg',
+      photo: 'https://randomuser.me/api/portraits/women/46.jpg',
       text:
         'Tocar bateria sempre foi uma paixão, mas nunca tive oportunidade de estudar com profundidade. Quando encontrei a Escola de Música Lapa, não só aprendi muito sobre o instrumento, mas também descobri uma verdadeira comunidade de músicos. O site tem todas as informações claras sobre os cursos e as redes sociais da escola fazem a comunicação ser bem direta',
     },

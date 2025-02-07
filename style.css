@@ -87,9 +87,8 @@ body {
 .container {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1619983081563-430f63602796?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     width: 90%;
-    height: 57rem;
     border-radius: 50px;
-    padding: 35px;
+    padding: 3.5rem;
     margin-top: 1rem;
     background-position: center;
 }
@@ -103,7 +102,6 @@ body {
 
 .container .title {
     text-align: left;
-    margin-top: 5rem;
 }
 
 p {
@@ -119,8 +117,11 @@ p {
     width: 90%;
 }
 
-.cards {
+.cards, .contacts-main {
     margin-top: 4rem;
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: 100%;
 }
 
 .card-course {
@@ -188,6 +189,7 @@ p {
 
 .info-titles {
     margin: 5rem 0;
+    flex-wrap: wrap;
 }
 
 .info-title {
@@ -209,7 +211,7 @@ p {
     background-color: #9E9E9E40;
     border: none;
     border-radius: 1rem;
-    width: 50rem;
+    width: 30rem;
     height: 5rem;
     padding: 1rem;
     font-size: 2rem;
@@ -268,4 +270,8 @@ footer {
     .fa-quote {
         display: none;
     }
+}
+
+@media (max-width: 760px) {
+    
 }
