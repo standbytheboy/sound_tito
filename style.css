@@ -8,6 +8,7 @@
     list-style: none;
     font-family: "Albert Sans", serif;
     color: whitesmoke;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -41,6 +42,47 @@ body {
     font-family: "Inspiration", Arial, Helvetica, sans-serif;
     font-size: 4.5rem;
 }
+
+.search {
+    position: relative;
+  }
+  
+  .search .input {
+    border: 0;
+    border-radius: 3rem;
+    font-size: 18px;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    transition: width 0.3s ease;
+    background: #4d4d4d;
+  }
+  
+  .btn {
+    background-color: #393939;
+    border: 0;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    transition: transform 0.3s ease;
+  }
+  
+  .btn:focus,
+  .input:focus {
+    outline: none;
+  }
+  
+  .search.active .input {
+    width: 200px;
+  }
+  
+  .search.active .btn {
+    transform: translateX(198px);
+  }
 
 .container {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1619983081563-430f63602796?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);

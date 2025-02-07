@@ -19,8 +19,12 @@
                 <li><a href="#depoiments">Depoimentos</a></li>
                 <li><a href="#contacts">Contatos</a></li>
             </ul>
-            <li class="search"><i class="fa-solid fa-magnifying-glass fa-2xl"
-                    style="color: whitesmoke; cursor: pointer;"></i></li>
+            <li class="search">
+                <input type="text" class="input" placeholder="Pesquisar...">
+                <button class="btn">
+                    <i class="fa-solid fa-magnifying-glass fa-xl" style="color: whitesmoke; cursor: pointer;"></i>
+                </button>
+            </li>
         </ul>
     </nav>
 
@@ -72,7 +76,8 @@
         <p class="subtitle">O que dizem nossos alunos</p>
         <div class="card-depoiment testimonial-container">
             <div class="progress-bar"></div>
-            <p class="testimonial"><strong>"Sempre sonhei em tocar piano, mas nunca soube por onde começar. A Escola Lapa me deu toda a base
+            <p class="testimonial"><strong>"Sempre sonhei em tocar piano, mas nunca soube por onde começar. A Escola
+                    Lapa me deu toda a base
                     e hoje toco com prazer em diversas apresentações."</strong></p>
             <div class="user flex">
                 <img src="https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -99,8 +104,11 @@
                 </div>
                 <h3 class="subscribe">Inscreva-se para ofertas exclusivas!</h3>
                 <div class="email flex">
-                    <input type="text" placeholder="Seu endereço de email" class="input-email">
-                    <button type="button" class="send-email-btn">Enviar</button>
+                    <form action="">
+                        <input type="email" pattern=".+@gmail.com" placeholder="email@exemplo.com" class="input-email"
+                            id="emailForm" required>
+                        <button type="button" class="send-email-btn" id="btnForm">Enviar</button>
+                    </form>
                 </div>
             </div>
             <img src="https://images.unsplash.com/photo-1504904126298-3fde501c9b31?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"

@@ -36,21 +36,62 @@ const testimonials = [
     },
 ]
 
-let idx = 1
+let idx = 1;
 
 function updateTestimonial() {
-  const { name, position, photo, text } = testimonials[idx]
+  const { name, position, photo, text } = testimonials[idx];
 
-  testimonial.innerHTML = text
-  userImage.src = photo
-  username.innerHTML = name
-  role.innerHTML = position
+  testimonial.innerHTML = text;
+  userImage.src = photo;
+  username.innerHTML = name;
+  role.innerHTML = position;
 
-  idx++
+  idx++;
 
   if (idx > testimonials.length - 1) {
-    idx = 0
+    idx = 0;
   }
 }
+setInterval(updateTestimonial, 10000);
 
-setInterval(updateTestimonial, 10000)
+// ======================= VALIDAÇÃO DO EMAIL =======================
+
+const emailForm = document.getElementById("emailForm");
+const btnForm = document.getElementById("btnForm");
+
+function validarEmail(email) {
+  const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  return regex.test(email);
+}
+
+btnForm.addEventListener("click", () => {
+  const emailValue = emailForm.value.trim();
+
+  // Verifica se o email tem o formato correto
+  if (!validarEmail(emailValue)) {
+    alert("Por favor, insira um email válido");
+    emailForm.focus();
+    return;
+  }
+
+  // Caso a validação passe
+  alert("Email enviado com sucesso!");
+  emailForm.value = ""; // Limpa o campo após sucesso
+});
+
+emailForm.addEventListener("keydown", (event) => {
+  if(event.key === "Enter"){
+    btnForm.click();
+}
+});
+
+// ======================= SEARCHBAR =======================
+
+const search = document.querySelector('.search');
+const btn = document.querySelector('.btn');
+const input = document.querySelector('.input');
+
+btn.addEventListener('click', () => {
+    search.classList.toggle('active');
+    input.focus();
+})
