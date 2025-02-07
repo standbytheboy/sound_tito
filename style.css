@@ -59,6 +59,19 @@ body {
     background: #4d4d4d;
 }
 
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: whitesmoke;
+    margin: 3px 0;
+}
+
 .btn {
     background-color: #393939;
     border: 0;
@@ -108,7 +121,7 @@ body {
 p {
     font-size: 2.4rem;
     max-width: 60rem;
-    margin: 5rem 0 0;
+    margin: 1.5rem 0 0;
 }
 
 #courses,
@@ -274,12 +287,6 @@ footer {
     }
 }
 
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
 /* =================== Menu Hambúrguer =================== */
 
 @media (max-width: 768px) {
@@ -318,13 +325,6 @@ footer {
     }
 }
 
-.bar {
-    height: 3px;
-    width: 25px;
-    background-color: whitesmoke;
-    margin: 3px 0;
-}
-
 /* =================== RESPONSIVIDADE RESTANTE =================== */
 
 @media (max-width: 500px) {
@@ -340,6 +340,10 @@ footer {
         width: 20rem;
         height: 20rem;
         border-radius: 2.5rem;
+    }
+
+    .cards {
+        gap: 0;
     }
 
     .card-course img {
