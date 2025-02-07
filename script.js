@@ -95,3 +95,12 @@ btn.addEventListener('click', () => {
     search.classList.toggle('active');
     input.focus();
 })
+
+document.addEventListener("DOMContentLoaded", function() {
+  const mobileMenu = document.getElementById('mobile-menu');
+  const topics = document.querySelector('.topics');
+
+  mobileMenu.addEventListener('click', () => {
+      topics.classList.toggle('active'); // Alterna a classe 'active' para mostrar/ocultar o menu
+  });
+});

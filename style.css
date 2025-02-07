@@ -28,6 +28,7 @@ body {
 .nav {
     max-width: 90%;
     margin: 2rem auto 0;
+    position: relative;
 }
 
 .topics {
@@ -45,9 +46,9 @@ body {
 
 .search {
     position: relative;
-  }
-  
-  .search .input {
+}
+
+.search .input {
     border: 0;
     border-radius: 3rem;
     font-size: 18px;
@@ -56,9 +57,9 @@ body {
     width: 50px;
     transition: width 0.3s ease;
     background: #4d4d4d;
-  }
-  
-  .btn {
+}
+
+.btn {
     background-color: #393939;
     border: 0;
     cursor: pointer;
@@ -69,20 +70,20 @@ body {
     height: 50px;
     width: 50px;
     transition: transform 0.3s ease;
-  }
-  
-  .btn:focus,
-  .input:focus {
+}
+
+.btn:focus,
+.input:focus {
     outline: none;
-  }
-  
-  .search.active .input {
+}
+
+.search.active .input {
     width: 200px;
-  }
-  
-  .search.active .btn {
+}
+
+.search.active .btn {
     transform: translateX(198px);
-  }
+}
 
 .container {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1619983081563-430f63602796?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
@@ -117,7 +118,8 @@ p {
     width: 90%;
 }
 
-.cards, .contacts-main {
+.cards,
+.contacts-main {
     margin-top: 4rem;
     flex-wrap: wrap;
     gap: 3rem;
@@ -176,7 +178,7 @@ p {
 }
 
 .contacts-img {
-    width: 43.7rem;
+    max-width: 43.7rem;
     height: 43.7rem;
     border-radius: 5rem;
 }
@@ -272,6 +274,91 @@ footer {
     }
 }
 
-@media (max-width: 760px) {
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+/* =================== Menu Hambúrguer =================== */
+
+@media (max-width: 768px) {
+    .topics {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 10;
+        right: 0;
+        background-color: whitesmoke;
+        padding: 20px 0;
+        width: 200px;
+        z-index: 1;
+        -webkit-box-shadow: 10px 10px 16px -8px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 10px 10px 16px -8px rgba(0, 0, 0, 1);
+        box-shadow: 10px 10px 16px -8px rgba(0, 0, 0, 1);
+        gap: 2.5rem;
+        border-radius: 1rem;
+    }
+
+    .topics li a {
+        color: #393939;
+    }
+
+    .topics.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav {
+        padding: 30px 20px;
+    }
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: whitesmoke;
+    margin: 3px 0;
+}
+
+/* =================== RESPONSIVIDADE RESTANTE =================== */
+
+@media (max-width: 500px) {
+    * {
+        text-align: center;
+    }
     
+    .title {
+        font-size: 3rem;
+    }
+
+    .contacts-img {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 2.5rem;
+    }
+
+    .card-course img {
+        width: 25rem;
+        height: 25rem;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    #contacts {
+        max-width: 70%;
+    }
+
+    .input-email {
+        max-width: fit-content;
+        margin-bottom: 1rem;
+    }
+
+    .info-titles {
+        justify-content: center;
+    }
 }
